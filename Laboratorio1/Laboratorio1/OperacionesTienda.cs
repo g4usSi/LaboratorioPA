@@ -19,18 +19,50 @@ namespace Laboratorio1
         }        
         */
         static int contadorProductos;
-        public double IngresarProductos() 
-        { 
-            
-            contadorProductos++;
-        }
-        public double Total() 
-        { 
-            
-        }
-        public double Descuento()
+        static double PrecioProducto;
+        static double Total;
+        static string Producto;
+        public void IngresarProductos() 
         {
+            bool entrada = false;
+            Console.Write("Ingrese el nombre del producto: ");
+            Producto = Console.ReadLine();
 
+            Console.Write("Ingrese el precio del producto: Q ");
+            do {
+
+                try
+                {
+                    PrecioProducto = Convert.ToDouble(Console.ReadLine());
+                    entrada = true;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Intente de nuevo: ");
+                }
+            } while (!entrada);
+            contadorProductos++;
+            SumarPrecios(PrecioProducto);
+        }
+        public double CalcularTotal() 
+        { 
+            return Total;
+        }
+        public double AplicarDescuento(double total)
+        {
+            if (total >= 500)
+            {
+                Console.WriteLine("Descuento del 15% aplicado sobre su total...");
+                return total = total - (total * 0.15);
+            }
+            else 
+            {
+                return total;
+            }
+        }
+        public void MostrarSubtotal() 
+        {
+            Console.WriteLine("Su carreta actual: Q "+Total);
         }
         public bool Continuar() 
         {
@@ -45,6 +77,14 @@ namespace Laboratorio1
                 return false;
             }
 
+        }
+        public void SumarPrecios(double precioActual) 
+        {
+            Total += precioActual;
+        }
+        public void MostrarTotal() 
+        {
+            Console.WriteLine("El total de su compra es: "+AplicarDescuento(Total));
         }
     }
 }

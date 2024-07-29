@@ -3,9 +3,8 @@
 List<string> productos = new List<string>();
 List<double> precio = new List<double>();
 OperacionesTienda operaciones = new OperacionesTienda();
-
+Console.WriteLine("...  Tienda en Linea ...");
 do {
-    Console.WriteLine("...  Tienda en Linea ...");
-    Console.Write("Igrese Productos... ");
-
+    operaciones.IngresarProductos();
+    operaciones.MostrarSubtotal();
 } while (operaciones.Continuar());

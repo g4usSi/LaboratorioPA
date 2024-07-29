@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Laboratorio1
 {
-
     internal class OperacionesTienda
     {
         /*
@@ -84,7 +83,7 @@ namespace Laboratorio1
         }
         public void MostrarTotal() 
         {
-            Console.WriteLine("El total de su compra es: "+AplicarDescuento(Total));
+            Console.WriteLine("El total de su compra es: Q"+AplicarDescuento(Total));
         }
     }
 }

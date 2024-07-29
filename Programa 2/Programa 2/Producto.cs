@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Programa_2
 {
+    
     internal class Producto
     {
         public string Nombre { get; set; }
@@ -18,6 +19,7 @@ namespace Programa_2
             Stock = stock;
         }
         public void MostrarInformacionProducto() {
+            
             Console.WriteLine($"Nombre: {Nombre}");
             Console.WriteLine($"Precio: Q{Precio}");
             Console.WriteLine($"Precio: Q{Stock}");
@@ -28,6 +30,7 @@ namespace Programa_2
         public void ReestablecerStock(int cantidadReestablecida) {
             Stock += cantidadReestablecida;
         }
+
 
 
     }

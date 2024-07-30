@@ -9,9 +9,9 @@ namespace Programa_2
     
     internal class Producto
     {
-        public string Nombre { get; set; }
-        public double Precio { get; set; }
-        public int Stock { get; set; }
+        public List<string> Nombre { get; set; }
+        public List<double> Precio { get; set; }
+        public List<int> Stock { get; set; }
         public Producto(string nombre, double precio, int stock)
         {
             Nombre = nombre;

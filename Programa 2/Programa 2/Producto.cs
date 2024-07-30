@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace Programa_2
 {
-    
     internal class Producto
     {
         public List<string> Nombre { get; set; }
         public List<double> Precio { get; set; }
         public List<int> Stock { get; set; }
-        public Producto(string nombre, double precio, int stock)
-        {
-            Nombre = nombre;
-            Precio = precio;
-            Stock = stock;
-        }
+        public Producto()
+        { }
+
+
         public void MostrarInformacionProducto() {
             
             Console.WriteLine($"Nombre: {Nombre}");

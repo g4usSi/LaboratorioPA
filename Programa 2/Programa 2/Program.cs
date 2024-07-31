@@ -1,6 +1,8 @@
 ﻿using Programa_2;
 internal class Program
 {
+    static double Valor;
+    static int Cantidad;
     private static void Main(string[] args)
     {
         int numero = 0;
@@ -9,16 +11,18 @@ internal class Program
         do
         {
             Menu();
-            Console.WriteLine("Ingrese una opcion: ");
-            try
-            {
-                numero = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Ingrese una opcion: ");
+
+                numero = LlenarNumeroEntero();
                 switch (numero)
                 {
                     case 1:
+                        Console.Clear();
+                        Console.WriteLine("--- Crear un producto ---");
                         Console.Write("Nombre: ");
                         string nombre = Console.ReadLine();
                         Console.Write("Precio: ");
+
                         double precio = Convert.ToDouble(Console.ReadLine());
                         Console.Write("Stock: ");
                         int stock = Convert.ToInt32(Console.ReadLine());
@@ -30,30 +34,45 @@ internal class Program
                         {
                             Console.WriteLine("Error uno de sus parametros es incorrecto");
                         }
+                        Console.WriteLine();
+
                         break;
                     case 2:
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine("--- Consultar informacion de un producto ---");
                         productos.MostrarInformacionProducto();
+
                         break;
                     case 3:
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine("Vender producto");
+                        Console.Write("Ingrese la cantidad que desea adquirir: ");
+                        productos.VenderProducto(LlenarNumeroEntero());
 
-                        productos.VenderProducto();
                         break;
                     case 4:
-                        productos.ReestablecerStock();
+                        Console.Clear();
+                        Console.WriteLine("--- Vender producto ---");
+                        Console.Write("Ingrese la cantidad que desea reestablecer: ");
+                        Console.WriteLine();
+                        productos.ReestablecerStock(LlenarNumeroEntero());
+
                         break;
                     case 5:
-                        productos.ActualizarPrecioProducto();
+                        Console.Clear();
+                        Console.WriteLine("--- Actualizar precio de un producto ---");
+                        Console.Write("Ingrese el nuevo precio que desea actualizar el producto: ");
+
+                        Console.WriteLine();
+                        productos.ActualizarPrecioProducto(LlenarValor());
+
                         break;
                     default:
                         Console.WriteLine("Opcion invalida...");
-                        break;
+                    break;
                 }
-            }
-            catch (Exception)
-            {
-                Console.Write("Error, intente de nuevo: ");
-                continue;
-            }
 
 
         } while (numero != 6);
@@ -67,6 +86,53 @@ internal class Program
             Console.WriteLine("5. Salir");
         }
 
-
+        static int LlenarNumeroEntero()
+        {//Llenar numero
+            bool valido = false;
+            while (!valido)
+            {
+                try
+                {
+                    Cantidad = Convert.ToInt32(Console.ReadLine());
+                    //se ejecuta linea por linea si hay una excepcion se captura antes del bool
+                    valido = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("[!] Error no puede ingresar letras...");
+                    Console.Write("Intente de nuevo: ");
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("[!] Error desconocido... ");
+                    Console.Write("> Intente de nuevo: ");
+                }
+            }
+            return Cantidad;
+        }
+        static double LlenarValor()
+        {//Llenar numero
+            bool valido = false;
+            while (!valido)
+            {
+                try
+                {
+                    Valor = Convert.ToDouble(Console.ReadLine());
+                    //se ejecuta linea por linea si hay una excepcion se captura antes del bool
+                    valido = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("[!] Error no puede ingresar letras...");
+                    Console.Write("Intente de nuevo: ");
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("[!] Error desconocido... ");
+                    Console.Write("> Intente de nuevo: ");
+                }
+            }
+            return Valor;
+        }
     }
 }

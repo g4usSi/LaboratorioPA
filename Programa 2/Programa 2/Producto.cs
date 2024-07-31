@@ -54,14 +54,12 @@ namespace Programa_2
                 Console.WriteLine("Producto no encontrado.");
             }
         }
-        public void VenderProducto() 
+        public void VenderProducto(int cantidadVendida) 
         {
             int posicion = BuscarProducto();
             if (posicion >= 0)
             {
-                Console.Write("Ingrese la cantidad que desea adquirir: ");
-                int cantidadReestablecida = Convert.ToInt32(Console.ReadLine());
-                Stock[posicion] -= cantidadReestablecida;
+                Stock[posicion] -= cantidadVendida;
                 Console.WriteLine("Stock actualizado correctamente.");
             }
             else
@@ -69,13 +67,11 @@ namespace Programa_2
                 Console.WriteLine("Producto no encontrado.");
             }
         }
-        public void ReestablecerStock()
+        public void ReestablecerStock(int cantidadReestablecida)
         {
             int posicion = BuscarProducto();
             if (posicion >= 0)
             {
-                Console.Write("Ingrese la cantidad que desea reestablecer: ");
-                int cantidadReestablecida = Convert.ToInt32(Console.ReadLine());
                 Stock[posicion] += cantidadReestablecida;
                 Console.WriteLine("Stock actualizado correctamente.");
             }
@@ -84,14 +80,12 @@ namespace Programa_2
                 Console.WriteLine("Producto no encontrado.");
             }
         }
-        public void ActualizarPrecioProducto() 
+        public void ActualizarPrecioProducto(double cantidadActualizada) 
         {
             int posicion = BuscarProducto();
             if (posicion >= 0)
             {
-                Console.Write("Ingrese la cantidad que desea actualizar el precio: ");
-                int cantidadReestablecida = Convert.ToInt32(Console.ReadLine());
-                Stock[posicion] += cantidadReestablecida;
+                Precio[posicion] = cantidadActualizada;
                 Console.WriteLine("Precio actualizado correctamente.");
             }
             else

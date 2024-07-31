@@ -13,7 +13,7 @@ internal class Program
             Menu();
             Console.Write("Ingrese una opcion: ");
 
-                numero = LlenarNumeroEntero();
+                numero = productos.LlenarNumeroEntero();
                 switch (numero)
                 {
                     case 1:
@@ -48,25 +48,22 @@ internal class Program
                         Console.Clear();
                         Console.WriteLine();
                         Console.WriteLine("Vender producto");
-                        Console.Write("Ingrese la cantidad que desea adquirir: ");
-                        productos.VenderProducto(LlenarNumeroEntero());
+                        productos.VenderProducto();
 
                         break;
                     case 4:
                         Console.Clear();
                         Console.WriteLine("--- Vender producto ---");
-                        Console.Write("Ingrese la cantidad que desea reestablecer: ");
+
                         Console.WriteLine();
-                        productos.ReestablecerStock(LlenarNumeroEntero());
+                        productos.ReestablecerStock();
 
                         break;
                     case 5:
                         Console.Clear();
-                        Console.WriteLine("--- Actualizar precio de un producto ---");
-                        Console.Write("Ingrese el nuevo precio que desea actualizar el producto: ");
-
+                    Console.WriteLine("--- Actualizar precio de un producto ---");
                         Console.WriteLine();
-                        productos.ActualizarPrecioProducto(LlenarValor());
+                        productos.ActualizarPrecioProducto();
 
                         break;
                     default:
@@ -84,55 +81,6 @@ internal class Program
             Console.WriteLine("3. Vender producto");
             Console.WriteLine("4. Actualizar precio de un producto");
             Console.WriteLine("5. Salir");
-        }
-
-        static int LlenarNumeroEntero()
-        {//Llenar numero
-            bool valido = false;
-            while (!valido)
-            {
-                try
-                {
-                    Cantidad = Convert.ToInt32(Console.ReadLine());
-                    //se ejecuta linea por linea si hay una excepcion se captura antes del bool
-                    valido = true;
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("[!] Error no puede ingresar letras...");
-                    Console.Write("Intente de nuevo: ");
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("[!] Error desconocido... ");
-                    Console.Write("> Intente de nuevo: ");
-                }
-            }
-            return Cantidad;
-        }
-        static double LlenarValor()
-        {//Llenar numero
-            bool valido = false;
-            while (!valido)
-            {
-                try
-                {
-                    Valor = Convert.ToDouble(Console.ReadLine());
-                    //se ejecuta linea por linea si hay una excepcion se captura antes del bool
-                    valido = true;
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("[!] Error no puede ingresar letras...");
-                    Console.Write("Intente de nuevo: ");
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("[!] Error desconocido... ");
-                    Console.Write("> Intente de nuevo: ");
-                }
-            }
-            return Valor;
         }
     }
 }

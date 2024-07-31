@@ -7,7 +7,7 @@ internal class Program
     {
         int numero = 0;
         Producto productos = new Producto();
-        Console.WriteLine("Administrador de Productos...");
+        Console.WriteLine("########## Administrador de Productos ##########");
         do
         {
             Menu();

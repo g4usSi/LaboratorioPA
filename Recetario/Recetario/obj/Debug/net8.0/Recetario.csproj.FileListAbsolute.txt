@@ -1,0 +1,15 @@
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\bin\Debug\net8.0\Recetario.exe
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\bin\Debug\net8.0\Recetario.deps.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\bin\Debug\net8.0\Recetario.runtimeconfig.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\bin\Debug\net8.0\Recetario.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\bin\Debug\net8.0\Recetario.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\Recetario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\Recetario.AssemblyInfoInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\Recetario.AssemblyInfo.cs
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\Recetario.csproj.CoreCompileInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\Recetario.sourcelink.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\Recetario.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\refint\Recetario.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\Recetario.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\Recetario.genruntimeconfig.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Recetario\Recetario\obj\Debug\net8.0\ref\Recetario.dll

@@ -22,16 +22,10 @@ namespace Programa_2
 
         public void AgregarProducto(string nombre, double precio, int stock)
         {
-            if (nombre != "")
-            {
                 Nombre.Add(nombre);
                 Precio.Add(precio);
                 Stock.Add(stock);
-            }
-            else
-            {
-                Console.WriteLine("El nombre no puede quedar vacio...");
-            }
+            Console.WriteLine("Producto agregado exitosamente");
         }
         public int BuscarProducto()
         {
@@ -60,14 +54,14 @@ namespace Programa_2
                 Console.WriteLine("Producto no encontrado.");
             }
         }
-        public void VenderProducto(int cantidadVendida) 
+        public void VenderProducto() 
         {
             int posicion = BuscarProducto();
             if (posicion >= 0)
             {
                 Console.Write("Ingrese la cantidad que desea adquirir: ");
                 int cantidadReestablecida = Convert.ToInt32(Console.ReadLine());
-                Stock[posicion] += cantidadReestablecida;
+                Stock[posicion] -= cantidadReestablecida;
                 Console.WriteLine("Stock actualizado correctamente.");
             }
             else

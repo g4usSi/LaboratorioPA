@@ -1,0 +1,15 @@
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\Programa 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\Programa 2.AssemblyInfoInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\Programa 2.AssemblyInfo.cs
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\Programa 2.csproj.CoreCompileInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\Programa 2.sourcelink.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\bin\Debug\net8.0\Programa 2.exe
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\bin\Debug\net8.0\Programa 2.deps.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\bin\Debug\net8.0\Programa 2.runtimeconfig.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\bin\Debug\net8.0\Programa 2.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\bin\Debug\net8.0\Programa 2.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\Programa 2.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\refint\Programa 2.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\Programa 2.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\Programa 2.genruntimeconfig.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Programa 2\Programa 2\obj\Debug\net8.0\ref\Programa 2.dll

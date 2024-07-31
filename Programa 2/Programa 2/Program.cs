@@ -12,7 +12,6 @@ internal class Program
         {
             Menu();
             Console.Write("Ingrese una opcion: ");
-
                 numero = productos.LlenarNumeroEntero();
                 switch (numero)
                 {
@@ -42,36 +41,34 @@ internal class Program
                         Console.WriteLine();
                         Console.WriteLine("--- Consultar informacion de un producto ---");
                         productos.MostrarInformacionProducto();
-
-                        break;
+                    Console.WriteLine();
+                    break;
                     case 3:
                         Console.Clear();
                         Console.WriteLine();
-                        Console.WriteLine("Vender producto");
+                        Console.WriteLine("--- Vender producto ---");
                         productos.VenderProducto();
-
-                        break;
+                    Console.WriteLine();
+                    break;
                     case 4:
                         Console.Clear();
-                        Console.WriteLine("--- Vender producto ---");
-
+                        Console.WriteLine("--- Reestablecer Stock ---");
                         Console.WriteLine();
                         productos.ReestablecerStock();
-
-                        break;
+                    Console.WriteLine();
+                    break;
                     case 5:
                         Console.Clear();
                     Console.WriteLine("--- Actualizar precio de un producto ---");
                         Console.WriteLine();
                         productos.ActualizarPrecioProducto();
-
-                        break;
+                    Console.WriteLine();
+                    break;
                     default:
                         Console.WriteLine("Opcion invalida...");
+                    Console.WriteLine();
                     break;
                 }
-
-
         } while (numero != 6);
 
         static void Menu()
@@ -79,8 +76,9 @@ internal class Program
             Console.WriteLine("1. Crear un producto");
             Console.WriteLine("2. Consultar informacion de un producto");
             Console.WriteLine("3. Vender producto");
-            Console.WriteLine("4. Actualizar precio de un producto");
-            Console.WriteLine("5. Salir");
+            Console.WriteLine("4. Reestablecer Stock");
+            Console.WriteLine("5. Actualizar precio de un producto");
+            Console.WriteLine("6. Salir");
         }
     }
 }

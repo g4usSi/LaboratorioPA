@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Programa_2
 {
-
     internal class Producto
-    { 
+    {
     static int Cantidad;
     static double Valor;
         //los atributos no inician el tipo de dato
@@ -30,6 +29,7 @@ namespace Programa_2
                 Precio.Add(precio);
                 Stock.Add(stock);
             Console.WriteLine("Producto agregado exitosamente");
+            Console.WriteLine();
         }
         public int BuscarProducto()
         {
@@ -94,13 +94,13 @@ namespace Programa_2
         public void ActualizarPrecioProducto()  
         {
             int posicion = BuscarProducto();
-            Console.Write("Ingrese el nuevo precio que desea actualizar el producto: ");
+            Console.Write("Ingrese el nuevo precio con el que desea actualizar el producto: Q");
             double cantidadActualizada = LlenarValor();
             if (posicion >= 0)
             {
 
                 Precio[posicion] = cantidadActualizada;
-                Console.WriteLine("Precio actualizado correctamente.");
+                Console.WriteLine("Precio actualizado correctamente: Q" + Precio[posicion];
             }
             else
             {

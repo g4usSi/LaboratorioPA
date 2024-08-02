@@ -1,0 +1,15 @@
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\bin\Debug\net8.0\POOyListasBiblioteca.exe
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\bin\Debug\net8.0\POOyListasBiblioteca.deps.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\bin\Debug\net8.0\POOyListasBiblioteca.runtimeconfig.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\bin\Debug\net8.0\POOyListasBiblioteca.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\bin\Debug\net8.0\POOyListasBiblioteca.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\POOyListasBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\POOyListasBiblioteca.AssemblyInfoInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\POOyListasBiblioteca.AssemblyInfo.cs
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\POOyListasBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\POOyListasBiblioteca.sourcelink.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\POOyListasBiblioteca.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\refint\POOyListasBiblioteca.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\POOyListasBiblioteca.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\POOyListasBiblioteca.genruntimeconfig.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\POOyListasBiblioteca\POOyListasBiblioteca\obj\Debug\net8.0\ref\POOyListasBiblioteca.dll

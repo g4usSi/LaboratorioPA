@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace POOyListasBiblioteca
 {
@@ -18,12 +19,24 @@ namespace POOyListasBiblioteca
             Autor = new List<string>();
             Año = new List<int>();
         }
-
-        public void AgregarLibro(string nombre, string autor, int año)
+        public void AgregarLibro()
         {
-            Nombre.Add(nombre);
-            Autor.Add(autor);
-            Año.Add(año);
+            Console.Write("Ingrese el nombre del nuevo libro: ");
+            string nombre = Console.ReadLine();
+            Console.Write("Ingrese el autor: ");
+            string autor = Console.ReadLine();
+            Console.Write("Ingrese el año: ");
+            int año = Convert.ToInt32(Console.ReadLine());
+            if (nombre != "" && autor != "" && año > 1000 ) {
+                Nombre.Add(nombre);
+                Autor.Add(autor);
+                Año.Add(año);
+                Console.WriteLine("Libro agregado exitosamente");
+            }
+            else
+            {
+                Console.WriteLine("Uno de sus parametros no es correcto...");
+            }
         }
         public int BuscarLibro(string nombre) {
             int posicion = Nombre.IndexOf(nombre);
@@ -62,18 +75,19 @@ namespace POOyListasBiblioteca
             Console.WriteLine("Ingrese el nombre del libro: ");
             string nombre = Console.ReadLine();
             int posicion = BuscarLibro(nombre);
-
             if (posicion >= 0) {
                 Nombre.RemoveAt(posicion);
                 Autor.RemoveAt(posicion);
                 Año.RemoveAt(posicion);
                 Console.WriteLine("El libro se ha eliminado de la biblioteca: ");
+                Console.WriteLine("Agregue el nuevo libro....");
+                AgregarLibro();
             }
             else 
             {
                 Console.WriteLine("El libro no se ha encontrado...");
             }
-            AgregarLibro();
+
         }
 
     }

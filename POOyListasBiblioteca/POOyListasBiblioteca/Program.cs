@@ -7,9 +7,8 @@ class Program
         Libro Biblioteca = new Libro();
         do
         {
-            Console.Clear();
             Console.WriteLine("Opciones");
-            Console.WriteLine("1. Mostrar Libros)");
+            Console.WriteLine("1. Mostrar Libros");
             Console.WriteLine("2. Agregar Libros");
             Console.WriteLine("3. Eliminar Libro");
             Console.WriteLine("4. Buscar Libro");
@@ -37,7 +36,9 @@ class Program
                     Biblioteca.EliminarLibro();
                     break;
                 case 4:
-                    Biblioteca.BuscarLibro();
+                    Console.WriteLine("Ingrese el nombre del libro: ");
+                    string nombre = Console.ReadLine();
+                    Biblioteca.BuscarLibro(nombre);
                     break;
                 case 5:
                     Biblioteca.EditarLibro();
@@ -47,8 +48,7 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Programa terminado. ¡Gracias!");
                     Environment.Exit(0);
-
-                    break;
+                break;
             }
 
 

@@ -1,4 +1,4 @@
-﻿using POOyListasBiblioteca;
+using POOyListasBiblioteca;
 
 class Program
 {
@@ -12,7 +12,7 @@ class Program
             Console.WriteLine("2. Agregar Libros");
             Console.WriteLine("3. Eliminar Libro");
             Console.WriteLine("4. Buscar Libro");
-            Console.WriteLine("5. Editar Libro");
+            Console.WriteLine("5. cambiar Libro");
             Console.WriteLine("6. Salir");
 
             Console.Write("Ingrese el número de la opción que desea realizar: ");
@@ -27,28 +27,32 @@ class Program
             {
                 case 1:
                     Biblioteca.MostrarLibros();
+                    Biblioteca.LimpiarConsola();
                     break;
                 case 2:
-
                     Biblioteca.AgregarLibro();
+                    Biblioteca.LimpiarConsola();
                     break;
                 case 3:
                     Biblioteca.EliminarLibro();
+                    Biblioteca.LimpiarConsola();
                     break;
                 case 4:
                     Console.WriteLine("Ingrese el nombre del libro: ");
                     string nombre = Console.ReadLine();
                     Biblioteca.BuscarLibro(nombre);
+                    Biblioteca.LimpiarConsola();
                     break;
                 case 5:
                     Biblioteca.EditarLibro();
+                    Biblioteca.LimpiarConsola();
                     break;
 
                 case 6:
                     Console.Clear();
                     Console.WriteLine("Programa terminado. ¡Gracias!");
                     Environment.Exit(0);
-                break;
+                    break;
             }
 
 

@@ -7,6 +7,7 @@ public class Producto
     public List<double> Precio { get; set; } = new List<double>();
     public List<bool> Disponible { get; set; } = new List<bool>();
     public List<string> Cliente { get; set; } = new List<string>();
+    //Opcion 3
     public void MostrarHabitaciones()
     {
         for (int i = 0 ; i < Precio.Count ; i++)
@@ -22,6 +23,7 @@ public class Producto
             }
         }
     }
+    //Opcion 1
     public void AgregarHabitacion(int numero, double precio, bool disponible, string cliente = "") 
     {
         Numero.Add(numero);
@@ -29,9 +31,59 @@ public class Producto
         Disponible.Add(disponible);
         Cliente.Add(cliente);
     }
-    public int BuscarHabitacion(int numeroIngresado)
+    //Opcion 2
+    public void EliminarHabitacion() 
+    { 
+        int numeroHabitacion = BuscarHabitacion();
+        if (numeroHabitacion >= 0)
+        {
+            MostrarHabitacion(numeroHabitacion);
+            Numero.RemoveAt(numeroHabitacion);
+            Precio.RemoveAt(numeroHabitacion);
+            Disponible.RemoveAt(numeroHabitacion);
+            Cliente.RemoveAt(numeroHabitacion);
+            Console.WriteLine("Habitacion Eliminada");
+        }
+        else
+        {
+            Console.WriteLine("No se encuentra la habitacion...");
+        }
+    }
+    //Opcion 4
+    public void AsignarHabitacion() 
     {
-        int posicion = Numero.IndexOf(numeroIngresado);
+        int index = BuscarHabitacion();
+        if (!Ocupado(index))
+        {
+            Console.Write("Ingrese el nombre del cliente: ");
+            string nombreCliente = Console.ReadLine();
+            Cliente[index] = nombreCliente;
+            Disponible[index] = false;
+        }
+        else
+        {
+            Console.WriteLine("La habitacion ya esta ocupada");
+        }
+    }
+    public void LiberarHabitacion()
+    {
+        int index = BuscarHabitacion();
+        if (Ocupado(index))
+        {
+            Cliente[index] = "";
+            Disponible[index] = true;
+            Console.WriteLine("Se ha liberado la habitacion: "+Numero[index]);
+        }
+        else
+        {
+            Console.WriteLine("La habitacion no esta ocupada...");
+        }
+    }
+    public int BuscarHabitacion()
+    {
+        Console.Write("Ingrese el numero de la habitacion: ");
+        int numeroHabitacion = LlenarNumeroEntero();
+        int posicion = Numero.IndexOf(numeroHabitacion);
         return posicion;
     }
     public void MostrarHabitacion(int posicion)
@@ -49,9 +101,22 @@ public class Producto
         }
         else 
         {
-            Console.WriteLine("No se encontro la habitacion");
+            Console.WriteLine("No se encontro la habitacion...");
         }
     }
+    public bool Ocupado(int posicion)
+    {
+        if (posicion >= 0)
+        {
+            return Disponible[posicion];
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    //Metodos de interaccion Menu
     public int LlenarNumeroEntero()
     {
         int numeroEntero = 0;

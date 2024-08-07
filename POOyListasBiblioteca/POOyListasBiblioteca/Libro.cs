@@ -69,7 +69,11 @@ namespace POOyListasBiblioteca
                     Console.WriteLine("Año: " + Año[i]);
                     Console.WriteLine("\n");
                 }
-            }else { Console.WriteLine("NO SE HA AGREGADO NINGUN LIBRO"); }
+            }
+            else 
+            { 
+                Console.WriteLine("NO SE HA AGREGADO NINGUN LIBRO"); 
+            }
         }
         public void EliminarLibro()
         {
@@ -122,7 +126,6 @@ namespace POOyListasBiblioteca
             Console.WriteLine("FIN DE LA OPERACION, PRESIONE UNA TECLA PARA CONTINUAR");
             Console.ReadKey();
             Console.Clear();
-
         }
 
     }

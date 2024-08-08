@@ -7,24 +7,15 @@ public class Producto
     public List<double> Precio { get; set; } = new List<double>();
     public List<bool> Disponible { get; set; } = new List<bool>();
     public List<string> Cliente { get; set; } = new List<string>();
-    //Opcion 3
-    public void MostrarHabitaciones()
-    {
-        for (int i = 0 ; i < Precio.Count ; i++)
-        {
-            Console.WriteLine($"\t\tProducto #{i}");
-            Console.WriteLine($"Numero Habitacion: {Numero[i]}");
-            Console.WriteLine($"Precio Habitacion: {Precio[i]}");
-            Console.WriteLine($"Disponible: {Disponible[i]}");
-            if (Disponible[i] == false)
-            {
-                Console.WriteLine($"Cliente Asignado: {Cliente[i]}");
-                continue;
-            }
-        }
+
+    public void AgregarHabitacion() {
+        Console.WriteLine($"Numero Habitacion: ");
+        int numeroHabitacion = LlenarNumeroEntero();
+        Console.WriteLine($"Precio Habitacion: ");
+        double precioHabitacion = LlenarNumeroDouble();
     }
     //Opcion 1
-    public void AgregarHabitacion(int numero, double precio, bool disponible, string cliente = "") 
+    public void ListarHabitacion(int numero, double precio, bool disponible = true, string cliente = "") 
     {
         Numero.Add(numero);
         Precio.Add(precio);
@@ -33,7 +24,7 @@ public class Producto
     }
     //Opcion 2
     public void EliminarHabitacion() 
-    { 
+    {
         int numeroHabitacion = BuscarHabitacion();
         if (numeroHabitacion >= 0)
         {
@@ -47,6 +38,22 @@ public class Producto
         else
         {
             Console.WriteLine("No se encuentra la habitacion...");
+        }
+    }
+    //Opcion 3
+    public void MostrarHabitaciones()
+    {
+        for (int i = 0; i < Precio.Count; i++)
+        {
+            Console.WriteLine($"\t\tHabitacion #{i + 1}");
+            Console.WriteLine($"Numero Habitacion: {Numero[i]}");
+            Console.WriteLine($"Precio Habitacion: {Precio[i]}");
+            Console.WriteLine($"Disponible: {Disponible[i]}");
+            if (Disponible[i] == false)
+            {
+                Console.WriteLine($"Cliente Asignado: {Cliente[i]}");
+                continue;
+            }
         }
     }
     //Opcion 4
@@ -94,7 +101,7 @@ public class Producto
             Console.WriteLine($"Numero Habiatcino: {Numero[posicion]}");
             Console.WriteLine($"Precio: {Precio[posicion]}");
             Console.WriteLine($"Disponible: {Disponible[posicion]}");
-            if (Disponible[posicion])
+            if (!Disponible[posicion])
             {
                 Console.WriteLine($"Cliente: {Cliente[posicion]}");
             }
@@ -102,17 +109,6 @@ public class Producto
         else 
         {
             Console.WriteLine("No se encontro la habitacion...");
-        }
-    }
-    public bool Ocupado(int posicion)
-    {
-        if (posicion >= 0)
-        {
-            return Disponible[posicion];
-        }
-        else
-        {
-            return false;
         }
     }
 

@@ -8,6 +8,8 @@ namespace Hotel
 {
     internal class HabitacionSimple
     {
+        public List<int> NumeroDeCamas { get; set; } = new List<int>();
 
+        
     }
 }

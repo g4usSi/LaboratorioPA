@@ -3,6 +3,9 @@ Habitacion hotel = new Habitacion();
 //utilidades principales
 //Primera version del programa
 //se puede realizar con una lista de objetos
+
+
+//REHACER CODIGO CON POLIMORFISMO
 HabitacionSimple habitacionSimple = new HabitacionSimple();
 HabitacionDoble habitacionDoble = new HabitacionDoble();
 Suite suite = new Suite();

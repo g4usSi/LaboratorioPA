@@ -1,7 +1,8 @@
 ﻿using Hotel;
 Habitacion hotel = new Habitacion();
 //utilidades principales
-
+//Primera version del programa
+//se puede realizar con una lista de objetos
 HabitacionSimple habitacionSimple = new HabitacionSimple();
 HabitacionDoble habitacionDoble = new HabitacionDoble();
 Suite suite = new Suite();

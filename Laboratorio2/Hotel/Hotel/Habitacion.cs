@@ -1,46 +1,22 @@
 ﻿using System;
 using System.ComponentModel;
 
-public class Producto
+public class Habitacion
 {
     public List<int> Numero { get; set; } = new List<int>();
     public List<double> Precio { get; set; } = new List<double>();
     public List<bool> Disponible { get; set; } = new List<bool>();
     public List<string> Cliente { get; set; } = new List<string>();
 
-    public void AgregarHabitacion() {
-        Console.WriteLine($"Numero Habitacion: ");
-        int numeroHabitacion = LlenarNumeroEntero();
-        Console.WriteLine($"Precio Habitacion: ");
-        double precioHabitacion = LlenarNumeroDouble();
-    }
-    //Opcion 1
-    public void ListarHabitacion(int numero, double precio, bool disponible = true, string cliente = "") 
+    public int RetornoPosicion(int numeroHabitacion)
     {
-        Numero.Add(numero);
-        Precio.Add(precio);
-        Disponible.Add(disponible);
-        Cliente.Add(cliente);
+        int posicion = Numero.IndexOf(numeroHabitacion);
+        return posicion;
     }
     //Opcion 2
-    public void EliminarHabitacion() 
-    {
-        int numeroHabitacion = BuscarHabitacion();
-        if (numeroHabitacion >= 0)
-        {
-            MostrarHabitacion(numeroHabitacion);
-            Numero.RemoveAt(numeroHabitacion);
-            Precio.RemoveAt(numeroHabitacion);
-            Disponible.RemoveAt(numeroHabitacion);
-            Cliente.RemoveAt(numeroHabitacion);
-            Console.WriteLine("Habitacion Eliminada");
-        }
-        else
-        {
-            Console.WriteLine("No se encuentra la habitacion...");
-        }
-    }
+
     //Opcion 3
+
     public void MostrarHabitaciones()
     {
         for (int i = 0; i < Precio.Count; i++)
@@ -57,9 +33,8 @@ public class Producto
         }
     }
     //Opcion 4
-    public void AsignarHabitacion() 
+    public void AsignarHabitacion(int index)
     {
-        int index = BuscarHabitacion();
         if (!Ocupado(index))
         {
             Console.Write("Ingrese el nombre del cliente: ");
@@ -72,9 +47,9 @@ public class Producto
             Console.WriteLine("La habitacion ya esta ocupada");
         }
     }
-    public void LiberarHabitacion()
+    //Opcion 5
+    public void LiberarHabitacion(int index)
     {
-        int index = BuscarHabitacion();
         if (Ocupado(index))
         {
             Cliente[index] = "";
@@ -86,43 +61,41 @@ public class Producto
             Console.WriteLine("La habitacion no esta ocupada...");
         }
     }
+
+    //Funcion solo para buscar una habitacion por numero
     public int BuscarHabitacion()
     {
         Console.Write("Ingrese el numero de la habitacion: ");
         int numeroHabitacion = LlenarNumeroEntero();
+        RetornoPosicion(numeroHabitacion);
         int posicion = Numero.IndexOf(numeroHabitacion);
         return posicion;
     }
+
+    //Muestra una unica habitacion al usuario para que tenga contexto 
     public void MostrarHabitacion(int posicion)
     {
-        if (posicion >= 0)
-        {
-            Console.WriteLine($"\t\tHabitacion: #{(posicion + 1)}");
-            Console.WriteLine($"Numero Habiatcino: {Numero[posicion]}");
-            Console.WriteLine($"Precio: {Precio[posicion]}");
-            Console.WriteLine($"Disponible: {Disponible[posicion]}");
-            if (!Disponible[posicion])
-            {
-                Console.WriteLine($"Cliente: {Cliente[posicion]}");
-            }
-        }
-        else 
-        {
-            Console.WriteLine("No se encontro la habitacion...");
-        }
+
     }
 
     //Metodos de interaccion Menu
     public int LlenarNumeroEntero()
     {
-        int numeroEntero = 0;
+        int numeroEntero;
         bool valido = false;
         while (!valido)
         {
             try
             {
-                numeroEntero = Convert.ToInt32(Console.ReadLine());
-                valido = true;
+                while (numeroEntero <= 0) 
+                {
+                    numeroEntero = Convert.ToInt32(Console.ReadLine());
+                    if (numeroEntero <= 0) 
+                    {
+                        Console.Write("No puede ingresar numeros negativos...\nIntente de nuevo: ");
+                    }
+                    valido = true;
+                }
             }
             catch (FormatException)
             {
@@ -137,6 +110,7 @@ public class Producto
         }
         return numeroEntero;
     }
+
     public double LlenarNumeroDouble()
     {
         double numeroDouble = 0;
@@ -161,6 +135,4 @@ public class Producto
         }
         return numeroDouble;
     }
-
-
 }

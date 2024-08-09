@@ -1,0 +1,5 @@
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel\Hotel\obj\Debug\net8.0\Hotel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel\Hotel\obj\Debug\net8.0\Hotel.AssemblyInfoInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel\Hotel\obj\Debug\net8.0\Hotel.AssemblyInfo.cs
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel\Hotel\obj\Debug\net8.0\Hotel.csproj.CoreCompileInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel\Hotel\obj\Debug\net8.0\Hotel.sourcelink.json

@@ -8,5 +8,6 @@ namespace Hotel
 {
     internal class Class1
     {
+
     }
 }

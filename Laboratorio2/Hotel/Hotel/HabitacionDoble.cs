@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hotel
 {
-    internal class Class1
+    internal class HabitacionDoble : Habitacion
     {
+
     }
 }

@@ -1,30 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Hotel
 {
-    internal class HabitacionDoble : Habitacion
+    internal class Deluxe : Habitacion
     {
-        public List<bool> VistaAlMar { get; set; } = new List<bool>();
-        public void AgregarHabitacionDoble()
+        public List<string> ServiciosExtras { get; set; } = new List<string>();
+        public void AgregarDeluxe()
         {
-            Console.WriteLine("\t\t\t> Habitacion Doble <");
+            Console.WriteLine("\t\t\t> Deluxe <");
             Console.Write($"Numero Habitacion: ");
             int numeroHabitacion = LlenarNumeroEntero();
             Console.Write($"Precio Habitacion: ");
             double precioHabitacion = LlenarNumeroDouble();
-            Console.Write("Tiene vista al Mar: ");
-            string vista = Console.ReadLine().ToLower();
-            bool vistaMar = (vista == "si"|| vista == "s");
-            ListarHabitacionDoble(numeroHabitacion, precioHabitacion, vistaMar);
-            Console.WriteLine("Habitacion simple agregada con exito...");
+            Console.WriteLine("Servicios Extras: ");
+            string serviciosExtras = Console.ReadLine();
+            ListarDeluxe(numeroHabitacion, precioHabitacion, serviciosExtras);
+            Console.WriteLine("Habitacion deluxe agregada con exito...");
         }
-        public void ListarHabitacionDoble(int numero, double precio, bool vistaMar)
+        public void ListarDeluxe(int numero, double precio, string serviciosExtras)
         {
             bool disponible = true;
             string cliente = "";
@@ -32,13 +30,13 @@ namespace Hotel
             Precio.Add(precio);
             Disponible.Add(disponible);
             Cliente.Add(cliente);
-            VistaAlMar.Add(vistaMar);
+            ServiciosExtras.Add(serviciosExtras);
         }
-        public void MostrarHabitacionesDobles()
+        public void MostrarDeluxes()
         {
             Console.WriteLine();
-            Console.WriteLine("\t\t\t   Habitaciones Dobles");
-            for (int i = 0; i < VistaAlMar.Count; i++)
+            Console.WriteLine("\t\t\t   Habitaciones Deluxe");
+            for (int i = 0; i < ServiciosExtras.Count; i++)
             {
                 Console.WriteLine($"\t\tHabitacion #{i + 1}");
                 Console.WriteLine($"Numero Habitacion: {Numero[i]}");
@@ -48,15 +46,15 @@ namespace Hotel
                 {
                     Console.WriteLine($"Cliente Asignado: {Cliente[i]}");
                 }
-                Console.WriteLine($"Vista al mar: {VistaAlMar[i]}");
+                Console.WriteLine($"Servicios extra: {ServiciosExtras[i]}");
             }
             Console.WriteLine();
         }
-        public void MostrarHabitacionDoble(int posicion)
+        public void MostrarDeluxe(int posicion)
         {
-            if (posicion >= 0)
+            if (posicion >= 0) 
             {
-                Console.WriteLine("\t\t\tHabitacion Doble #" + posicion);
+                Console.WriteLine("\t\t\tHabitacion Deluxe #" + posicion);
                 //int posicion = base.RetornoPosicion(numeroHabitacion);
                 Console.WriteLine($"\t\tHabitacion: #{(posicion + 1)}");
                 Console.WriteLine($"Numero Habitacion: {Numero[posicion]}");
@@ -66,14 +64,14 @@ namespace Hotel
                 {
                     Console.WriteLine($"Cliente: {Cliente[posicion]}");
                 }
-                Console.WriteLine($"Vista al mar: {VistaAlMar[posicion]}");
+                Console.WriteLine($"Servicios extra: {ServiciosExtras[posicion]}");
             }
         }
-        public void EliminarHabitacionDoble(int numeroHabitacion)
+        public void EliminarDeluxe(int numeroHabitacion)
         {
             if (numeroHabitacion >= 0)
             {
-                MostrarHabitacionDoble(numeroHabitacion);
+                MostrarDeluxe(numeroHabitacion);
                 Console.Write("> Esta segur@ que desea eliminar la habitacion: " + (numeroHabitacion + 1) + "?\n(Si/No) no se puede deshacer: ");
                 string confirmacion = Console.ReadLine().ToLower();
                 if (confirmacion == "Si" || confirmacion == "s")
@@ -82,8 +80,8 @@ namespace Hotel
                     Precio.RemoveAt(numeroHabitacion);
                     Disponible.RemoveAt(numeroHabitacion);
                     Cliente.RemoveAt(numeroHabitacion);
-                    VistaAlMar.RemoveAt(numeroHabitacion);
-                    Console.WriteLine("Habitación Doble Eliminada.\n> Enter para continuar");
+                    ServiciosExtras.RemoveAt(numeroHabitacion);  // Elimina el dato específico de la clase hija
+                    Console.WriteLine("Habitación deluxe Eliminada.\n> Enter para continuar");
                     Console.ReadKey();
                 }
                 else
@@ -93,7 +91,9 @@ namespace Hotel
                     Console.WriteLine();
                 }
             }
+
         }
 
     }
+
 }

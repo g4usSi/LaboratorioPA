@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel\\Hotel\\Hotel.csproj",
+      "projectUniqueName": "C:\\Users\\Geovanny Alcon\\source\\repos\\HomeworkProgrAvanz\\Hotel\\Hotel\\Hotel.csproj",
       "projectName": "Hotel",
-      "projectPath": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel\\Hotel\\Hotel.csproj",
+      "projectPath": "C:\\Users\\Geovanny Alcon\\source\\repos\\HomeworkProgrAvanz\\Hotel\\Hotel\\Hotel.csproj",
       "packagesPath": "C:\\Users\\Geovanny Alcon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel\\Hotel\\obj\\",
+      "outputPath": "C:\\Users\\Geovanny Alcon\\source\\repos\\HomeworkProgrAvanz\\Hotel\\Hotel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Geovanny Alcon\\AppData\\Roaming\\NuGet\\NuGet.Config",

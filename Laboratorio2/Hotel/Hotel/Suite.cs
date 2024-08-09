@@ -1,30 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Hotel
 {
-    internal class HabitacionDoble : Habitacion
+    internal class Suite : Habitacion
     {
-        public List<bool> VistaAlMar { get; set; } = new List<bool>();
-        public void AgregarHabitacionDoble()
+        public List<int> Habitaciones { get; set; } = new List<int>();
+        public List<bool> Jacuzzi { get; set; } = new List<bool>();
+        public void AgregarSuite()
         {
-            Console.WriteLine("\t\t\t> Habitacion Doble <");
+            Console.WriteLine("\t\t\t> Suite <");
             Console.Write($"Numero Habitacion: ");
             int numeroHabitacion = LlenarNumeroEntero();
             Console.Write($"Precio Habitacion: ");
             double precioHabitacion = LlenarNumeroDouble();
-            Console.Write("Tiene vista al Mar: ");
-            string vista = Console.ReadLine().ToLower();
-            bool vistaMar = (vista == "si"|| vista == "s");
-            ListarHabitacionDoble(numeroHabitacion, precioHabitacion, vistaMar);
-            Console.WriteLine("Habitacion simple agregada con exito...");
+            Console.Write($"Numero de habitaciones: ");
+            int numeroHabitaciones = LlenarNumeroEntero();
+            Console.Write($"Tiene jacuzzi: ");
+            string tiene = Console.ReadLine().ToLower();
+            bool tieneJacuzzi = (tiene == "si" || tiene == "s");
+            ListarSuite(numeroHabitacion, precioHabitacion, numeroHabitaciones, tieneJacuzzi);
+            Console.WriteLine("Habitacion suite agregada con exito...");
         }
-        public void ListarHabitacionDoble(int numero, double precio, bool vistaMar)
+        public void ListarSuite(int numero, double precio, int numHabitaciones, bool jacuzzi)
         {
             bool disponible = true;
             string cliente = "";
@@ -32,15 +34,16 @@ namespace Hotel
             Precio.Add(precio);
             Disponible.Add(disponible);
             Cliente.Add(cliente);
-            VistaAlMar.Add(vistaMar);
+            Habitaciones.Add(numHabitaciones);
+            Jacuzzi.Add(jacuzzi);
         }
-        public void MostrarHabitacionesDobles()
+        public void MostrarSuites()
         {
             Console.WriteLine();
-            Console.WriteLine("\t\t\t   Habitaciones Dobles");
-            for (int i = 0; i < VistaAlMar.Count; i++)
+            Console.WriteLine("\t\t\t   Habitaciones Suite");
+            for (int i = 0; i < Jacuzzi.Count; i++)
             {
-                Console.WriteLine($"\t\tHabitacion #{i + 1}");
+                Console.WriteLine($"\t\tSuite #{i + 1}");
                 Console.WriteLine($"Numero Habitacion: {Numero[i]}");
                 Console.WriteLine($"Precio Habitacion: {Precio[i]}");
                 Console.WriteLine($"Disponible: {Disponible[i]}");
@@ -48,17 +51,18 @@ namespace Hotel
                 {
                     Console.WriteLine($"Cliente Asignado: {Cliente[i]}");
                 }
-                Console.WriteLine($"Vista al mar: {VistaAlMar[i]}");
+                Console.WriteLine($"Numero de habitaciones: {Habitaciones[i]}");
+                Console.WriteLine($"Tiene jacuzzi: {Jacuzzi[i]}");
             }
             Console.WriteLine();
         }
-        public void MostrarHabitacionDoble(int posicion)
+        public void MostrarSuite(int posicion)
         {
-            if (posicion >= 0)
+            if (posicion >= 0) 
             {
-                Console.WriteLine("\t\t\tHabitacion Doble #" + posicion);
+                Console.WriteLine("\t\t\tHabitacion Suite #" + posicion);
                 //int posicion = base.RetornoPosicion(numeroHabitacion);
-                Console.WriteLine($"\t\tHabitacion: #{(posicion + 1)}");
+                Console.WriteLine($"\t\tSuite: #{(posicion + 1)}");
                 Console.WriteLine($"Numero Habitacion: {Numero[posicion]}");
                 Console.WriteLine($"Precio: {Precio[posicion]}");
                 Console.WriteLine($"Disponible: {Disponible[posicion]}");
@@ -66,14 +70,15 @@ namespace Hotel
                 {
                     Console.WriteLine($"Cliente: {Cliente[posicion]}");
                 }
-                Console.WriteLine($"Vista al mar: {VistaAlMar[posicion]}");
+                Console.WriteLine($"Numero de habitaciones: {Habitaciones[posicion]}");
+                Console.WriteLine($"Tiene jacuzzi: {Jacuzzi[posicion]}");
             }
         }
-        public void EliminarHabitacionDoble(int numeroHabitacion)
+        public void EliminarSuite(int numeroHabitacion)
         {
             if (numeroHabitacion >= 0)
             {
-                MostrarHabitacionDoble(numeroHabitacion);
+                MostrarSuite(numeroHabitacion);
                 Console.Write("> Esta segur@ que desea eliminar la habitacion: " + (numeroHabitacion + 1) + "?\n(Si/No) no se puede deshacer: ");
                 string confirmacion = Console.ReadLine().ToLower();
                 if (confirmacion == "Si" || confirmacion == "s")
@@ -82,8 +87,9 @@ namespace Hotel
                     Precio.RemoveAt(numeroHabitacion);
                     Disponible.RemoveAt(numeroHabitacion);
                     Cliente.RemoveAt(numeroHabitacion);
-                    VistaAlMar.RemoveAt(numeroHabitacion);
-                    Console.WriteLine("Habitación Doble Eliminada.\n> Enter para continuar");
+                    Habitaciones.RemoveAt(numeroHabitacion);
+                    Jacuzzi.RemoveAt(numeroHabitacion);
+                    Console.WriteLine("Habitación suite Eliminada.\n> Enter para continuar");
                     Console.ReadKey();
                 }
                 else
@@ -96,4 +102,5 @@ namespace Hotel
         }
 
     }
+
 }

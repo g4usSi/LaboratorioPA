@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Hotel
 {
@@ -11,18 +12,19 @@ namespace Hotel
     {
         public List<int> NumeroDeCamas { get; set; } = new List<int>();
 
-        public void AgregarHabitacionSimple() 
+        public void AgregarHabitacionSimple()
         {
-            Console.WriteLine($"Numero Habitacion: ");
+            Console.WriteLine("\t\t\t> Habitacion Simple <");
+            Console.Write($"Numero Habitacion: ");
             int numeroHabitacion = LlenarNumeroEntero();
-            Console.WriteLine($"Precio Habitacion: ");
+            Console.Write($"Precio Habitacion: ");
             double precioHabitacion = LlenarNumeroDouble();
             Console.Write("Numero de camas: ");
             int numeroDeCamas = base.LlenarNumeroEntero();
-            ListarHabitacionSimple(numeroHabitacion, precioHabitacion);
+            ListarHabitacionSimple(numeroHabitacion, precioHabitacion, numeroDeCamas);
             Console.WriteLine("Habitacion simple agregada con exito...");
         }
-        public void ListarHabitacionSimple(int numeroDeCamas) 
+        public void ListarHabitacionSimple(int numero, double precio ,int numeroDeCamas)
         {
             bool disponible = true;
             string cliente = "";
@@ -32,19 +34,19 @@ namespace Hotel
             Cliente.Add(cliente);
             NumeroDeCamas.Add(numeroDeCamas);
         }
-        public void MostrarHabitacionesSimples() 
+        public void MostrarHabitacionesSimples()
         {
-            Console.WriteLine("\t\t\tHabitaciones Simples");
+            Console.WriteLine();
+            Console.WriteLine("\t\t\t   Habitaciones Simples");
             for (int i = 0; i < NumeroDeCamas.Count; i++)
             {
                 Console.WriteLine($"\t\tHabitacion #{i + 1}");
                 Console.WriteLine($"Numero Habitacion: {Numero[i]}");
                 Console.WriteLine($"Precio Habitacion: {Precio[i]}");
-                Console.WriteLine($"Disponible: {Disponible[i]}"); 
+                Console.WriteLine($"Disponible: {Disponible[i]}");
                 if (Disponible[i] == false)
                 {
                     Console.WriteLine($"Cliente Asignado: {Cliente[i]}");
-                    continue;
                 }
                 Console.WriteLine($"Numero de camas: {NumeroDeCamas[i]}");
             }
@@ -52,12 +54,12 @@ namespace Hotel
         }
         public void MostrarHabitacionSimple(int posicion)
         {
-            //int posicion = base.RetornoPosicion(numeroHabitacion);
             if (posicion >= 0)
             {
-
+                Console.WriteLine("\t\t\tHabitacion Simple #"+posicion);
+                //int posicion = base.RetornoPosicion(numeroHabitacion);
                 Console.WriteLine($"\t\tHabitacion: #{(posicion + 1)}");
-                Console.WriteLine($"Numero Habiatcino: {Numero[posicion]}");
+                Console.WriteLine($"Numero Habitacion: {Numero[posicion]}");
                 Console.WriteLine($"Precio: {Precio[posicion]}");
                 Console.WriteLine($"Disponible: {Disponible[posicion]}");
                 if (!Disponible[posicion])
@@ -66,27 +68,32 @@ namespace Hotel
                 }
                 Console.WriteLine($"Numero de camas: {NumeroDeCamas[posicion]}");
             }
-            else
-            {
-                Console.WriteLine("No se encuentra la habitación...");
-            }
         }
         public void EliminarHabitacionSimple(int numeroHabitacion)
         {
             if (numeroHabitacion >= 0)
             {
-                MostrarHabitacion(numeroHabitacion);
-                Numero.RemoveAt(numeroHabitacion);
-                Precio.RemoveAt(numeroHabitacion);
-                Disponible.RemoveAt(numeroHabitacion);
-                Cliente.RemoveAt(numeroHabitacion);
-                NumeroDeCamas.RemoveAt(posicion);  // Elimina el dato específico de la clase hija
-                Console.WriteLine("Habitación Simple Eliminada.");
+                MostrarHabitacionSimple(numeroHabitacion);
+                Console.Write("> Esta segur@ que desea eliminar la habitacion: "+(numeroHabitacion+1)+"?\n(Si/No) no se puede deshacer: ");
+                string confirmacion = Console.ReadLine().ToLower();
+                if (confirmacion=="Si"||confirmacion=="s") 
+                {
+                    Numero.RemoveAt(numeroHabitacion);
+                    Precio.RemoveAt(numeroHabitacion);
+                    Disponible.RemoveAt(numeroHabitacion);
+                    Cliente.RemoveAt(numeroHabitacion);
+                    NumeroDeCamas.RemoveAt(numeroHabitacion);  // Elimina el dato específico de la clase hija
+                    Console.WriteLine("Habitación Simple Eliminada.\n> Enter para continuar");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("> Regresando al menu...");
+                    Console.WriteLine();
+                }
             }
-            else
-            {
-                Console.WriteLine("No se encuentra la habitacion...");
-            }
+
         }
 
     }

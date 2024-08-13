@@ -1,0 +1,15 @@
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\bin\Debug\net8.0\Hotel_POO_herencia.exe
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\bin\Debug\net8.0\Hotel_POO_herencia.deps.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\bin\Debug\net8.0\Hotel_POO_herencia.runtimeconfig.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\bin\Debug\net8.0\Hotel_POO_herencia.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\bin\Debug\net8.0\Hotel_POO_herencia.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\Hotel_POO_herencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\Hotel_POO_herencia.AssemblyInfoInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\Hotel_POO_herencia.AssemblyInfo.cs
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\Hotel_POO_herencia.csproj.CoreCompileInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\Hotel_POO_herencia.sourcelink.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\Hotel_POO_herencia.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\refint\Hotel_POO_herencia.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\Hotel_POO_herencia.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\Hotel_POO_herencia.genruntimeconfig.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio2\Hotel_POO_herencia\Hotel_POO_herencia\obj\Debug\net8.0\ref\Hotel_POO_herencia.dll

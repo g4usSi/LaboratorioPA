@@ -22,14 +22,6 @@ namespace Hotel_POO_herencia
         }
         //constructor para Main
         public Habitacion() { }
-        /*public virtual void AgregarHabitacion()
-        {
-            Console.Write($"Numero Habitacion: ");
-            int numeroHabitacion = LlenarNumeroEntero();
-            Console.Write($"Precio Habitacion: ");
-            double precioHabitacion = LlenarNumeroDouble();
-            new Habitacion(numeroHabitacion, precioHabitacion, true, "");
-        }*/
         public virtual void AgregarHabitacion() 
         {
             Console.Write($"Numero Habitacion: ");

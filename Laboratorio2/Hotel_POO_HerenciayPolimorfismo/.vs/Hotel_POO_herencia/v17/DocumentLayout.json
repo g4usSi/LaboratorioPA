@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel_POO_HerenciayPolimorfismo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio2\\hotel_poo_herenciaypolimorfismo\\hotel_poo_herencia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|solutionrelative:hotel_poo_herencia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio2\\hotel_poo_herenciaypolimorfismo\\hotel_poo_herencia\\deluxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|solutionrelative:hotel_poo_herencia\\deluxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio2\\hotel_poo_herenciaypolimorfismo\\hotel_poo_herencia\\habitacionsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|solutionrelative:hotel_poo_herencia\\habitacionsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio2\\hotel_poo_herenciaypolimorfismo\\hotel_poo_herencia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|solutionrelative:hotel_poo_herencia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio2\\hotel_poo_herenciaypolimorfismo\\hotel_poo_herencia\\suite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio2\\hotel_poo_herenciaypolimorfismo\\hotel_poo_herencia\\habitaciondoble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|solutionrelative:hotel_poo_herencia\\habitaciondoble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio2\\hotel_poo_herenciaypolimorfismo\\hotel_poo_herencia\\habitacionsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD8095CA-5734-47AC-8693-891B9AE6D352}|Hotel_POO_herencia\\Hotel_POO_herencia.csproj|solutionrelative:hotel_poo_herencia\\habitacionsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Habitacion.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel_POO_HerenciayPolimorfismo\\Hotel_POO_herencia\\Habitacion.cs",
               "RelativeDocumentMoniker": "Hotel_POO_herencia\\Habitacion.cs",
@@ -51,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel_POO_HerenciayPolimorfismo\\Hotel_POO_herencia\\Program.cs",
               "RelativeDocumentMoniker": "Hotel_POO_herencia\\Program.cs",
@@ -73,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Suite.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel_POO_HerenciayPolimorfismo\\Hotel_POO_herencia\\Suite.cs",
               "RelativeDocumentMoniker": "Hotel_POO_herencia\\Suite.cs",
@@ -85,19 +85,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Deluxe.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel_POO_HerenciayPolimorfismo\\Hotel_POO_herencia\\Deluxe.cs",
               "RelativeDocumentMoniker": "Hotel_POO_herencia\\Deluxe.cs",
               "ToolTip": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel_POO_HerenciayPolimorfismo\\Hotel_POO_herencia\\Deluxe.cs",
               "RelativeToolTip": "Hotel_POO_herencia\\Deluxe.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBUAAAA2AAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwCAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T02:52:21.475Z"
+              "WhenOpened": "2024-08-12T02:52:21.475Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "HabitacionSimple.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel_POO_HerenciayPolimorfismo\\Hotel_POO_herencia\\HabitacionSimple.cs",
               "RelativeDocumentMoniker": "Hotel_POO_herencia\\HabitacionSimple.cs",
@@ -105,11 +106,12 @@
               "RelativeToolTip": "Hotel_POO_herencia\\HabitacionSimple.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAAAsAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T21:02:31.272Z"
+              "WhenOpened": "2024-08-11T21:02:31.272Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HabitacionDoble.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio2\\Hotel_POO_HerenciayPolimorfismo\\Hotel_POO_herencia\\HabitacionDoble.cs",
               "RelativeDocumentMoniker": "Hotel_POO_herencia\\HabitacionDoble.cs",

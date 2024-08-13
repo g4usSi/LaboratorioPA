@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("POOyListasBiblioteca")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9254f4435bb2b36c0e2a25f1b2b9a75588a46a2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a769072f41bb879dd1b5780316a83343f1f1ded9")]
 [assembly: System.Reflection.AssemblyProductAttribute("POOyListasBiblioteca")]
 [assembly: System.Reflection.AssemblyTitleAttribute("POOyListasBiblioteca")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

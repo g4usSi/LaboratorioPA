@@ -19,7 +19,6 @@ public class Habitacion
             if (Disponible[i] == false)
             {
                 Console.WriteLine($"Cliente Asignado: {Cliente[i]}");
-                continue;
             }
         }
     }

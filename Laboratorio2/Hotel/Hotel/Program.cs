@@ -4,7 +4,6 @@ Habitacion hotel = new Habitacion();
 //Primera version del programa
 //se puede realizar con una lista de objetos
 
-
 //REHACER CODIGO CON POLIMORFISMO
 HabitacionSimple habitacionSimple = new HabitacionSimple();
 HabitacionDoble habitacionDoble = new HabitacionDoble();
@@ -18,7 +17,7 @@ bool exit = false;
 do
 {
     Menu();
-    Console.Write("> Ingrese una opcion: ");
+    Console.Write("> Ingrese una opcion: ");v
     opcion = hotel.LlenarNumeroEntero();
     switch (opcion)
     {

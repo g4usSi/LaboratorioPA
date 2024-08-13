@@ -11,7 +11,6 @@ namespace Hotel
     internal class HabitacionSimple : Habitacion
     {
         public List<int> NumeroDeCamas { get; set; } = new List<int>();
-
         public void AgregarHabitacionSimple()
         {
             Console.WriteLine("\t\t\t> Habitacion Simple <");

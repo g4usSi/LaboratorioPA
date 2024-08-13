@@ -12,10 +12,9 @@ namespace Laboratorio_3
         public string Correo { get; set; }
         public string Direccion { get; set; }
         public string Tipo { get; set; }
-        public Cliente()
-        {
-            
-        }
+
+        public Cliente() { }
+
         public Cliente(string nombre, string correo, string direccion)
         {
             this.Nombre = nombre;

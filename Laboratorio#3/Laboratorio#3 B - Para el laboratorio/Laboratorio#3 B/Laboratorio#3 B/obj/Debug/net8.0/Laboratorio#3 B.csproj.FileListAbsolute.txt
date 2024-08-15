@@ -1,0 +1,15 @@
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\bin\Debug\net8.0\Laboratorio#3 B.exe
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\bin\Debug\net8.0\Laboratorio#3 B.deps.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\bin\Debug\net8.0\Laboratorio#3 B.runtimeconfig.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\bin\Debug\net8.0\Laboratorio#3 B.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\bin\Debug\net8.0\Laboratorio#3 B.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\Laboratorio#3 B.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\Laboratorio#3 B.AssemblyInfoInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\Laboratorio#3 B.AssemblyInfo.cs
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\Laboratorio#3 B.csproj.CoreCompileInputs.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\Laboratorio#3 B.sourcelink.json
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\Laboratorio#3 B.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\refint\Laboratorio#3 B.dll
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\Laboratorio#3 B.pdb
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\Laboratorio#3 B.genruntimeconfig.cache
+C:\Users\Geovanny Alcon\source\repos\Progrmacion Avanzada\Laboratorio#3\Laboratorio#3 B - Para el laboratorio\Laboratorio#3 B\Laboratorio#3 B\obj\Debug\net8.0\ref\Laboratorio#3 B.dll

@@ -108,7 +108,6 @@ namespace Laboratorio_3_B
                 return null;
             }
         }
-
         //Mostrar todas las reservaciones y detalles del cliente
         public static void MostrarReservaciones(List<Reservacion> reservaciones) 
         {

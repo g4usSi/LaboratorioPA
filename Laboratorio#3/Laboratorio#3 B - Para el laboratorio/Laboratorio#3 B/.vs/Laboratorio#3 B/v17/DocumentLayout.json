@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Reservacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Laboratorio#3 B\\Reservacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio#3\\laboratorio#3 b - para el laboratorio\\laboratorio#3 b\\laboratorio#3 b\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|solutionrelative:laboratorio#3 b\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Laboratorio#3 B\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio#3\\laboratorio#3 b - para el laboratorio\\laboratorio#3 b\\laboratorio#3 b\\reservacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|solutionrelative:laboratorio#3 b\\reservacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Laboratorio#3 B\\Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio#3\\laboratorio#3 b - para el laboratorio\\laboratorio#3 b\\laboratorio#3 b\\clientevip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|solutionrelative:laboratorio#3 b\\clientevip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio#3\\laboratorio#3 b - para el laboratorio\\laboratorio#3 b\\laboratorio#3 b\\platillo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|solutionrelative:laboratorio#3 b\\platillo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|c:\\users\\geovanny alcon\\source\\repos\\progrmacion avanzada\\laboratorio#3\\laboratorio#3 b - para el laboratorio\\laboratorio#3 b\\laboratorio#3 b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D84F68DD-AF4A-4DA5-86FD-E2AA89B6B3F4}|Laboratorio#3 B\\Laboratorio#3 B.csproj|solutionrelative:laboratorio#3 b\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,50 +38,69 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Platillo.cs",
+              "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Platillo.cs",
+              "RelativeDocumentMoniker": "Laboratorio#3 B\\Platillo.cs",
+              "ToolTip": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Platillo.cs",
+              "RelativeToolTip": "Laboratorio#3 B\\Platillo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T01:43:43.837Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ClienteVIP.cs",
+              "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\ClienteVIP.cs",
+              "RelativeDocumentMoniker": "Laboratorio#3 B\\ClienteVIP.cs",
+              "ToolTip": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\ClienteVIP.cs",
+              "RelativeToolTip": "Laboratorio#3 B\\ClienteVIP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T16:53:27.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Cliente.cs",
               "RelativeDocumentMoniker": "Laboratorio#3 B\\Cliente.cs",
               "ToolTip": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Cliente.cs",
               "RelativeToolTip": "Laboratorio#3 B\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T00:53:34.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Reservacion.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Reservacion.cs",
               "RelativeDocumentMoniker": "Laboratorio#3 B\\Reservacion.cs",
               "ToolTip": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Reservacion.cs",
               "RelativeToolTip": "Laboratorio#3 B\\Reservacion.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAcwJwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T00:53:30.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Program.cs",
               "RelativeDocumentMoniker": "Laboratorio#3 B\\Program.cs",
               "ToolTip": "C:\\Users\\Geovanny Alcon\\source\\repos\\Progrmacion Avanzada\\Laboratorio#3\\Laboratorio#3 B - Para el laboratorio\\Laboratorio#3 B\\Laboratorio#3 B\\Program.cs",
               "RelativeToolTip": "Laboratorio#3 B\\Program.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T00:53:00.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T00:53:00.047Z"
             }
           ]
         }

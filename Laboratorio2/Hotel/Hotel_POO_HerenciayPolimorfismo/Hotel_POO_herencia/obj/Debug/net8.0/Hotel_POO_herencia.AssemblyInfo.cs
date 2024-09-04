@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hotel_POO_herencia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4414501ae67951cc7b6814c92d6464abe2329c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+412faad39b6a8eccdb9504dc2d1ff2a333d5ccf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hotel_POO_herencia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hotel_POO_herencia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

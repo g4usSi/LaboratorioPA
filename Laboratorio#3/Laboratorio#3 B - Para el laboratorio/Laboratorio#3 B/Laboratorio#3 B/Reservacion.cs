@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_3_B
 {
-    internal class Reservacion
+    //public siempre para evitar instanciar un nuevo objeto, y no ponerlo como un atributo
+    public class Reservacion
     {
         public int NumeroReservacion { get; set; }
         public DateTime Fecha { get; set; }
-        public Cliente Cliente { get; set; } = new Cliente();
+        Cliente Cliente { get; set; }
         public double TotalCuenta { get; set; }
         public List<Platillo> ComidaReservada { get; set; } = new List<Platillo>();
         public List<Platillo> Platillos { get; set; } = new List<Platillo>
@@ -23,6 +24,11 @@ namespace Laboratorio_3_B
         };
 
         public Reservacion() { }
+        //Metodo de autenticacion
+        public void AutenticarReservacion(Cliente clienteActual, DateTime fechaReservacion, int numeroReservacion, int totalCuenta) 
+        {
+            
+        }
         //Agregar nueva reservacion
         public void RegistrarNuevaReservacion(int numeroReservacion, List<Cliente> listaClientes)
         {
@@ -32,11 +38,11 @@ namespace Laboratorio_3_B
             {
                 this.NumeroReservacion = numeroReservacion;
                 Console.WriteLine("Ingrese la fecha de reservacion...");
-                Console.Write("\t> Ingrese dia: ");
+                Console.Write("> Ingrese dia: ");
                 int fecha = LlenarNumeroEntero();
-                Console.Write("\t> Ingrese mes: ");
+                Console.Write("> Ingrese mes: ");
                 int mes = LlenarNumeroEntero();
-                Console.Write("\t> Ingrese año: ");
+                Console.Write("> Ingrese año: ");
                 int año = LlenarNumeroEntero();
                 this.Fecha = new DateTime(año, mes, fecha);
                 Cliente clienteActual = Cliente.BuscarCliente(listaClientes);
@@ -79,6 +85,7 @@ namespace Laboratorio_3_B
                 return;
             }
         }
+
         public int NumReservacion(List<Reservacion> listaReservaciones)
         {
             Console.Write("> Ingrese el numero de reservacion: ");
@@ -93,6 +100,7 @@ namespace Laboratorio_3_B
             }
             return numeroReservacion;
         }
+
         public Reservacion BuscarReservacion(List<Reservacion> listaReservaciones)
         {
             Console.Write("Ingrese el numero de la reservacion: ");
@@ -155,7 +163,8 @@ namespace Laboratorio_3_B
             Console.WriteLine("[ 1 ] Buscar por cliente: ");
             Console.WriteLine("[ 2 ] Buscar por numero de reservacion: ");
             int opcion = LlenarNumeroEntero();
-            switch (opcion) 
+
+            switch (opcion)
             {
                 case 1:
                     Cliente clienteActual = Cliente.BuscarCliente(listaClientes);

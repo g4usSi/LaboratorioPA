@@ -1,5 +1,7 @@
 ﻿using Laboratorio_3_B;
+using System.Collections.Specialized;
 using System.Net;
+
 Reservacion administrador = new Reservacion();
 List<Cliente> listaClientes = new List<Cliente>();
 List<Reservacion> listaReservaciones = new List<Reservacion>();
@@ -46,20 +48,22 @@ do
             reservacion.RegistrarNuevaReservacion(reservacion.NumReservacion(listaReservaciones), listaClientes);
             listaReservaciones.Add(reservacion);
             break;
+
         case 3:
             Console.Clear();
             Console.WriteLine("\t\t\tMOSTRAR DETALLES DEL CLIENTE Y RESERVAS");
             Reservacion.MostrarReservaciones(listaReservaciones);
             break;
+
         case 4:
             Console.Clear();
             Console.WriteLine("\t\t\tBUSCAR CLIENTE O RESERVAS");
             administrador.BuscarClienteoReserva(listaClientes, listaReservaciones);
-        break;
+            break;
 
         case 5:
             continuarMenu = false;
-            break;
+        break;
     }
 }while (!continuarMenu);
 

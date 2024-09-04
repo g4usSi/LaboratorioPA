@@ -1,4 +1,4 @@
-﻿internal class Platillo
+﻿public class Platillo
 {
     public string NombrePlatillo { get; set; }
     public double PrecioPlatillo { get; set; }

@@ -14,16 +14,33 @@ do
             Utilidades.TituloMensaje("\t\t*** FACTORIAL DE UN NUMERO ***");
             numeroUsuario = NumeroUsuario();
             Utilidades.TituloMensaje("\t\tITERACIONES");
+
             Utilidades.TituloMensaje("\t\tRRECURSIVIDAD");
+
             break;
         case 2:
             Utilidades.TituloMensaje("\t\tSERIE FIBONACCI");
+            Utilidades.TituloMensaje("\t\tITERACIONES");
+
+            Utilidades.TituloMensaje("\t\tRRECURSIVIDAD");
+
             break;
         case 3:
             Utilidades.TituloMensaje("\t\tINGRESO DE DATOS");
+            Utilidades.TituloMensaje("\t\tITERACIONES");
+
+            Utilidades.TituloMensaje("\t\tRRECURSIVIDAD");
+
+            break;
+        case 4:
+            Utilidades.TituloMensaje("SALIR");
+            Console.WriteLine("Esta seguro que desea finalizar el programa? (si/no)");
+            string exitString = Console.ReadLine().ToLower();
+            exit = (exitString == "si"||exitString == "s");
             break;
         default:
-            Console.WriteLine("");
+            Console.WriteLine("Opcion incorrecta");
+
         break;
     }
 
@@ -37,6 +54,7 @@ static void Menu()
     Console.WriteLine("1. Factorial de un numero");
     Console.WriteLine("2. Serie fibonacci");
     Console.WriteLine("3. Ingreso de datos");
+    Console.WriteLine("4. Salir");
 }
 static int NumeroUsuario() 
 {

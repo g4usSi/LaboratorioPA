@@ -12,7 +12,7 @@ public static class Utilidades
     {
         Console.WriteLine();
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("\t\t\t "+contenidoTitulo);
+        Console.WriteLine(contenidoTitulo);
         Console.ResetColor();
     }
     public static void ErrorMensaje(string contenidoTitulo)

@@ -29,11 +29,15 @@ do
             Utilidades.EsperaConfirmacion();
             break;
         case 3:
+            int numEjemplo;
             Utilidades.TituloMensaje("\t*** INGRESO DE DATOS ***");
             Utilidades.TituloMensaje("\t\tITERACIONES");
-
+            Console.WriteLine("> A continuacion ingrese un numero....");
+            numEjemplo = LlenarNumeroEnteroCiclo();
+            Console.WriteLine("\n [!] Numero ingresado: ( "+ numEjemplo +" ).");
             Utilidades.TituloMensaje("\t\tRRECURSIVIDAD");
-
+            numEjemplo = LlenarNumeroEnteroRecursividad();
+            Console.WriteLine("\n [!] Numero ingresado: ( " + numEjemplo + " ).");
             Utilidades.EsperaConfirmacion();
             break;
         case 4:
@@ -143,3 +147,61 @@ static int FibonacciCiclo(int n)
 }
 
 //Ingreso de datos
+static int LlenarNumeroEnteroCiclo()
+{
+    int numeroEntero = 0;
+    bool valido = false;
+    Console.WriteLine("-> Primer paso pedir el numero");
+    Console.Write("Ingrese un numero entero: ");
+    while (!valido)
+    {
+        try
+        {
+            numeroEntero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("-> Ingreso al ciclo, si no se pudo convertir el numero, se repetira este ciclo while");
+            if (numeroEntero > 0)
+            {
+                valido = true;
+            }
+            else
+            {
+                Console.Write("No puede ingresar números negativos o cero. \nIntente de nuevo: ");
+            }
+        }
+        catch (FormatException)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("[!] Error: no puede ingresar letras. \nIntente de nuevo: ");
+
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("[!] Error desconocido: " + ex.Message);
+            Console.Write("Intente de nuevo: ");
+        }
+        finally
+        {
+            Console.ResetColor();
+        }
+    }
+    return numeroEntero;
+}
+
+static int LlenarNumeroEnteroRecursividad()
+{
+    Console.WriteLine("-> Entrada al metodo\n");
+    Console.Write("Ingrese un número entero: ");
+    string entrada = Console.ReadLine();
+    int numeroEntero;
+
+    if (!int.TryParse(entrada, out numeroEntero))
+    {
+        Console.WriteLine("-> Entrada al caso base, si se cumple la funcion se llamara a si misma\n");
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("[!] Error: Debe ingresar un número entero válido.");
+        Console.ResetColor();
+        return LlenarNumeroEnteroRecursividad();
+    }
+    return numeroEntero;
+}
